@@ -24,6 +24,9 @@
   --background: #f3f4f6;
   --background-dark: #e5e7eb;
   --background-darker: #d1d5db;
+  --gray-300:#D1D5DB;
+  --gray-400: #9CA3AF;
+  --gray-500:#6B7280;
 }
 
 body{ 
@@ -34,8 +37,8 @@ body{
    padding-bottom: 4.25rem; /* height footer*/
 }
 
-/* Layouts */
-/* Containers */
+/* layouts */
+/* containers */
 .container-sm {
   max-width: 40rem; 
   padding: 0 1rem;
@@ -61,7 +64,7 @@ body{
   margin: auto;
 }
 
-/* Sections */
+/* sections */
 .section-sm {
   margin: 2rem 0;
 }
@@ -79,7 +82,7 @@ body{
   margin: 9rem 0;
 }
 
-/* Article Elements */
+/* article */
 .article{
   padding-top: 4rem;
 }
@@ -140,6 +143,75 @@ body{
 
 .article__link {
   color: var(--primary-dark);
+}
+
+/* buttons */
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 100%;
+  text-align: center;
+  color: var(--text);
+  gap: 0.5rem;
+}
+
+.button, .button:focus{
+  background-color: var(--gray-300);
+}
+
+.button:hover{
+  background-color: var(--gray-400);
+}
+
+.button:active{
+  background-color: var(--gray-500);
+}
+
+.button:disabled{
+  opacity: 0.6;
+}
+
+.button--primary, .button--primary:active, .button--primary:focus {
+  background-color: var(--primary);
+  color: white;
+}
+
+.button--primary:hover{
+  background-color: var(--primary-dark);
+}
+
+.button--secondary, .button--secondary:active, .button--secondary:focus{
+  background-color: var(--secondary);
+  color: white;
+}
+
+.button--secondary:hover{
+  background-color: var(--secondary-dark);
+}
+
+.button--sm {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.button--lg {
+  padding: 0.875rem 1.5rem;;
+  font-size: 1.125rem;
+}
+
+.button--wf{
+  width: 100%;
+}
+
+.button--icon{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Navbar & Footer */
