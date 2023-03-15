@@ -1,0 +1,17 @@
+/* Navbar*/
+.header{
+  color: var(--background-lighter);
+  background-color: var(--secondary-dark);
+  height: 4.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}

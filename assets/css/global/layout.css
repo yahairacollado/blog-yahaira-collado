@@ -1,0 +1,44 @@
+/* layouts */
+/* containers */
+.container-sm {
+  max-width: 40rem; 
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.container,
+.container-md {
+  max-width: 48rem;
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.container-lg {
+  max-width: 64rem; 
+  padding: 0 1rem;
+  margin: auto;
+}
+
+.container-xl {
+  max-width: 80rem; 
+  padding: 0 1rem;
+  margin: auto;
+}
+
+/* sections */
+.section-sm {
+  margin: 2rem 0;
+}
+
+.section,
+.section-md {
+  margin: 3rem 0;
+}
+
+.section-lg {
+  margin: 6rem 0;
+}
+
+.section-xl {
+  margin: 9rem 0;
+}
