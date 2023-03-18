@@ -38,10 +38,10 @@
   color: var(--primary-dark);
 }
 
-.navbar__links .link:focus {
+/* .navbar__links .link:focus {
   outline: 2px solid var(--primary);
   outline-offset: 1px;
-}
+} */
 
 /* Hamburguer menu */
 .navbar__links{
