@@ -8,7 +8,7 @@
 
 .contact__form{
   margin: auto;
-  width: 40rem;
+  max-width: 40rem;
   text-align: left;
 }
 
