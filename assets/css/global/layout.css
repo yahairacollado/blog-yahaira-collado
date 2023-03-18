@@ -42,3 +42,20 @@
 .section-xl {
   margin: 9rem 0;
 }
+
+.section-padding-sm {
+  padding: 2rem 0;
+}
+
+.section-padding,
+.section-padding-md {
+  padding: 3rem 0;
+}
+
+.section-padding-lg {
+  padding: 6rem 0;
+}
+
+.section-padding-xl {
+  padding: 9rem 0;
+}
