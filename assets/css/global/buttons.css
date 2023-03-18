@@ -52,8 +52,54 @@
   background-color: var(--gray-300);
 }
 
+/* Button Primary */
 
 .button--primary {
   background-color: var(--primary);
   color: var(--white);
+}
+
+.button--primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.button--primary:active {
+  background-color: var(--primary-darker);
+}
+
+.button--primary:focus {
+  outline: 3px solid var(--info);
+  outline-offset: 1px;
+}
+
+.button--primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+  background-color: var(--primary);
+}
+
+/* Button secondary */
+
+.button--secondary {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+.button--secondary:hover {
+  background-color: var(--secondary-dark);
+}
+
+.button--secondary:active {
+  background-color: var(--secondary-darker);
+}
+
+.button--secondary:focus {
+  outline: 3px solid var(--info);
+  outline-offset: 1px;
+}
+
+.button--secondary:disabled {
+  opacity: 0.6;
+  cursor: default;
+  background-color: var(--secondary);
 }
