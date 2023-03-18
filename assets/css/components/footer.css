@@ -1,21 +1,25 @@
 /* Footer */
-body{ 
-  position: relative; /* height position */
-  padding-bottom: 4.25rem; /* height footer*/
-}
-
-.footer {
-  color: var(--background-lighter);
-  background-color: var(--secondary-dark);
-  height: 4.25rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.8rem;
+body{
+  position: relative;
+  padding-bottom: 14.5rem; /*height footer*/
 }
 
 .footer {
   position: absolute;
   bottom: 0;
+  width: 100%;
+  background-color: var(--secondary-light);
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem 1rem;
+}
+
+.footer__content__title {
+  text-align: center;
+  line-height: 1rem;
 }
