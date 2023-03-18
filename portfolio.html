@@ -8,6 +8,160 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-  
+  <div class="menu-wrapper">
+    <header class="header">
+      <div class="container-lg">
+        <nav class="navbar">
+          <a
+            href="/index.html"
+            class="navbar__logo heading-md semibold text-decoration-none"
+          >
+            <span> Yahaira Collado </span>
+          </a>
+
+          <!-- Hamburguer menu -->
+          <input class="navbar__menu-btn" type="checkbox" id="menu-btn" />
+          <label class="navbar__menu-icon" for="menu-btn">
+            <span class="navicon"></span>
+          </label>
+
+          <ul class="navbar__links list-style-none">
+            <li>
+              <a href="#" class="link text-md semibold">Articles</a>
+            </li>
+            <li>
+              <a href="/portfolio.html"  class="link text-md semibold">Portfolio</a>
+            </li>
+            <li>
+              <a href="/about.html" class="link text-md semibold">About</a>
+            </li>
+            <li>
+              <a
+                href="/contact.html"
+                class="button button--primary button--sm text-decoration-none ml-4"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+   </div>
+
+   <main class="section-lg portfolio">
+    <div class="container-lg">
+      <div class="portfolio__header">
+        <h2 class="heading-lg semibold">Portfolio</h2>
+        <p class="text-lg regular">Practice builds mastery</p>
+      </div>
+      <ul class="portfolio__list">
+        <!-- First project -->
+        <li class="portfolio__card">
+          <div class="portfolio__card--icons">
+            <span>
+              <img src="./assets/icons/code.svg" alt="code icon"/>
+              <img src="./assets/icons/ruby-red.svg" alt="ruby icon"/>
+              <img src="./assets/icons/github.svg" alt="github icon"/>
+            </span>
+            <a href="/project-page.html" target="_blank" >
+              <img src="./assets/icons/arrow.svg" alt="arrow"/>
+            </a>
+          </div>
+          <div class="portfolio__card--text">
+            <h2 class="heading-xs semibold">CalenCLI</h2>
+            <p class="text-lg light">Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+            <ul class="portfolio__card--badges">
+              <li class="text-xs regular">Control Flow</li>
+              <li class="text-xs regular">Dates</li>
+              <li class="text-xs regular">Methods</li>
+              <li class="text-xs regular">Loops</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Second Project -->
+        <li class="portfolio__card">
+          <div class="portfolio__card--icons">
+            <span>
+              <img src="./assets/icons/code.svg" alt="code icon"/>
+              <img src="./assets/icons/ruby-red.svg" alt="ruby icon"/>
+              <img src="./assets/icons/github.svg" alt="github icon"/>
+            </span>
+            <a href="/project-page.html" target="_blank" >
+              <img src="./assets/icons/arrow.svg" alt="arrow"/>
+            </a>
+          </div>
+          <div class="portfolio__card--text">
+            <h2 class="heading-xs semibold">Pokemon Ruby</h2>
+            <p class="text-lg light">Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+            <ul class="portfolio__card--badges">
+              <li class="text-xs regular">Classes</li>
+              <li class="text-xs regular">Modules</li>
+              <li class="text-xs regular">Inheritance</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Third Project -->
+        <li class="portfolio__card">
+          <div class="portfolio__card--icons">
+            <span>
+              <img src="./assets/icons/code.svg" alt="code icon"/>
+              <img src="./assets/icons/ruby-red.svg" alt="ruby icon"/>
+              <img src="./assets/icons/github.svg" alt="github icon"/>
+            </span>
+            <a href="/project-page.html" target="_blank" >
+              <img src="./assets/icons/arrow.svg" alt="arrow"/>
+            </a>
+          </div>
+          <div class="portfolio__card--text">
+            <h2 class="heading-xs semibold">CLIn Boards</h2>
+            <p class="text-lg light">Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+            <ul class="portfolio__card--badges">
+              <li class="text-xs regular">File Manipulation</li>
+              <li class="text-xs regular">Classes</li>
+              <li class="text-xs regular">JSON</li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Fourth Project -->
+        <li class="portfolio__card">
+          <div class="portfolio__card--icons">
+            <span>
+              <img src="./assets/icons/code.svg" alt="code icon"/>
+              <img src="./assets/icons/ruby-red.svg" alt="ruby icon"/>
+              <img src="./assets/icons/github.svg" alt="github icon"/>
+            </span>
+            <a href="/project-page.html" target="_blank" >
+              <img src="./assets/icons/arrow.svg" alt="arrow"/>
+            </a>
+          </div>
+          <div class="portfolio__card--text">
+            <h2 class="heading-xs semibold">Expensable CLI</h2>
+            <p class="text-lg light">Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et quo et molestiae.</p>
+            <ul class="portfolio__card--badges">
+              <li class="text-xs regular">HTTP Requests</li>
+              <li class="text-xs regular">Classes</li>
+              <li class="text-xs regular">Modules</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+   </main>
+
+   <footer class="footer">
+    <div class="container-lg footer__content">
+      <h2 class="heading-xl semibold footer__content__title">
+        Can I Help you?
+      </h2>
+      <a
+      href="mailto:yahairavittoria@gmail.com"
+      class="button button--primary text-decoration-none ml-4"
+      >Get In Touch!
+    </a>
+    </div>
+  </footer>
 </body>
 </html>
