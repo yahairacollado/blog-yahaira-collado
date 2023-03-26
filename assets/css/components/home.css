@@ -44,7 +44,7 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .home__skills-list li {
@@ -69,7 +69,7 @@
     margin: 0;
   }
 
-  .home__projects-list {
+  .home__projects-list, .home__skills-list {
     display: flex;
     flex-direction: column;
     align-items: center;
