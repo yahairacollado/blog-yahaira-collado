@@ -66,20 +66,34 @@
       </nav>
     </header>
 
-    <main class="section-lg contact">
+    <main class="section-lg contact text-align-center">
+      <section class="container-lg">
+        <div class="contact__hero section-padding-lg ">
+          <a
+            href="#"
+            class="text-decoration-none flex__row-centered color-blue"
+          >
+            <i class="ri-arrow-left-line"></i>
+            <p class="bold heading-xs ml-2">Back To Home</p>
+          </a>
+          <h2 class="semibold heading-xl">Contact Me</h2>
+        </div>
+      </section>
+
       <div class="container-lg">
-        <div class="contact__header">
-          <h2 class="heading-lg semibold">Contact Me</h2>
+        <div class="contact__header section-padding-sm">
+          <h2 class="heading-lg semibold">
+            Looking to expand your team? <br />Or do you need a web developer
+            for a specific project?
+          </h2>
           <p class="text-lg light">
-            Looking to expand your team? Or do you need a web developer for a
-            specific project? If I can help you in any way don't hesitate to
-            fill this form.
+            If I can help you in any way don't hesitate to fill this form.
           </p>
         </div>
-        <form class="contact__form" action="/">
+        <form id="contact__form" class="contact__form" action="/">
           <div class="contact__form--inputs">
             <span>
-              <label for="fname" class="text-xs light overline"
+              <label for="fname" class="heading-xs"
                 >First Name</label
               >
               <input
@@ -87,12 +101,12 @@
                 id="fname"
                 name="firstname"
                 placeholder="John"
-                class="text-md light"
+                class="text-xl"
               />
             </span>
 
             <span>
-              <label for="lname" class="text-xs light overline"
+              <label for="lname" class="heading-xs"
                 >Last Name</label
               >
               <input
@@ -100,23 +114,23 @@
                 id="lname"
                 name="lastname"
                 placeholder="Doe"
-                class="text-md light"
+                class="text-xl"
               />
             </span>
 
             <span>
-              <label for="email" class="text-xs light overline">Email</label>
+              <label for="email" class="heading-xs">Email</label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 placeholder="john@mail.com"
-                class="text-md light"
+                class="text-xl"
               />
             </span>
 
             <span>
-              <label for="company" class="text-xs light overline"
+              <label for="company" class="heading-xs"
                 >Company</label
               >
               <input
@@ -124,23 +138,23 @@
                 id="company"
                 name="company"
                 placeholder="Company SA"
-                class="text-md light"
+                class="text-xl"
               />
             </span>
 
             <span>
-              <label for="phone" class="text-xs light overline">Phone</label>
+              <label for="phone" class="heading-xs">Phone</label>
               <input
                 type="number"
                 id="phone"
                 name="phone"
                 placeholder="987654321"
-                class="text-md light"
+                class="text-xl"
               />
             </span>
 
             <span>
-              <label for="country" class="text-xs light overline"
+              <label for="country" class="heading-xs"
                 >Country</label
               >
               <select id="country" name="country">
@@ -153,51 +167,42 @@
           </div>
 
           <div class="contact__form--checkboxes">
-            <p class="text-xs light overline">How can I help you?</p>
+            <h2 class="heading-xs regular">How can I help you?</h2>
 
-            <label class="contact__form--checkbox">
-              <input type="checkbox" name="job-offer" />
-              <span>
-                <p class="text-sm light">Job Offer</p>
-                <p class="text-xs light">
-                  If you are looking to expand your team
-                </p>
-              </span>
-            </label>
-
-            <label class="contact__form--checkbox">
-              <input type="checkbox" name="job-offer" />
-              <span>
-                <p class="text-sm light">Project Offer</p>
-                <p class="text-xs light">
-                  If you are looking to expand your team
-                </p>
-              </span>
-            </label>
-
-            <label class="contact__form--checkbox">
-              <input type="checkbox" name="job-offer" />
-              <span>
-                <p class="text-sm light">Collaboration</p>
-                <p class="text-xs light">
-                  If you are looking to expand your team
-                </p>
-              </span>
-            </label>
-
-            <label class="contact__form--checkbox">
-              <input type="checkbox" name="job-offer" />
-              <span>
-                <p class="text-sm light">Other</p>
-              </span>
-            </label>
+            <span>
+              <label class="contact__form--checkbox">
+                <input type="checkbox" name="job-offer" />
+                <p class="text-xl">Job Offer</p>
+              </label>
+  
+              <label class="contact__form--checkbox">
+                <input type="checkbox" name="job-offer" />
+                <p class="text-xl">Project Offer</p>
+              </label>
+  
+              <label class="contact__form--checkbox">
+                <input type="checkbox" name="job-offer" />
+                <p class="text-xl">Collaboration</p>
+              </label>
+  
+              <label class="contact__form--checkbox">
+                <input type="checkbox" name="job-offer" />
+                <p class="text-xl">Other</p>
+              </label>
+            </span>
           </div>
 
-          <input
-            class="button button--primary w-full"
+          <!-- <input
+            class="button button--primary"
             type="submit"
             value="Submit"
-          />
+          /> -->
+
+          <button type="button" onclick="submitForm()" class="button button--primary submit-button">
+            Submit
+            <i class="ri-arrow-right-up-line"></i>
+          </button>
+
         </form>
       </div>
     </main>
@@ -212,10 +217,10 @@
             Let's talk to make your work easier.
           </p>
           <a
-            href="/contact.html"
+            href="#contact__form"
             class="button button--primary text-decoration-none"
             >Get Started
-            <i class="ri-arrow-right-up-line"></i>
+            <i class="ri-arrow-up-line"></i>
           </a>
         </div>
       </div>

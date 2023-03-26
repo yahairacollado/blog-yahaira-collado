@@ -1,5 +1,10 @@
-.contact {
-  text-align: center;
+.contact__hero {
+  border-radius: 1.25rem;
+  background-image: url("../../images/background.jpeg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 3rem;
 }
 
 .contact h2 {
@@ -20,7 +25,9 @@
 }
 
 .contact__form--inputs label {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: var(--font-primary);
+  margin-bottom: 1.125rem;
 }
 
 .contact__form--inputs span {
@@ -31,11 +38,30 @@
 
 .contact__form--inputs input,
 .contact__form--inputs select {
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 0.75rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--gray-700);
-  outline-color: var(--primary-dark);
+  border: 1px solid #dcdcdc;
+  outline-color: var(--orange);
+  font-family: var(--font-secondary);
 }
+
+/* .contact__form input[type="submit"] {
+  margin-top: 1.5rem;
+} */
+
+.submit-button{
+  margin: 0 auto;
+}
+
+.contact__form--checkboxes{
+  padding: 2rem 0;
+}
+
+.contact__form--checkboxes span{
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
 
 .contact__form--checkbox {
   display: flex;
@@ -44,9 +70,6 @@
   padding: 1rem 0;
 }
 
-.contact__form input[type="submit"] {
-  margin-top: 1.5rem;
-}
 
 @media only screen and (max-width: 769px) {
   .contact__form--inputs {
