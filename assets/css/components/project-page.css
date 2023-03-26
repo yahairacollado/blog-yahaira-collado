@@ -1,14 +1,14 @@
-.hero{
+.hero {
   background-color: var(--gray-100);
 }
-.hero-content{
+.hero-content {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0;
 }
 
-.hero-wrapper{
+.hero-wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,20 +17,22 @@
 }
 
 .features {
-  background-color: var(--secondary-light) ;
+  background-color: var(--secondary-light);
 }
 
-.features__header, .team__header{
+.features__header,
+.team__header {
   gap: 1rem;
   padding-bottom: 1rem;
 }
 
-.features__list ,.team__list{
+.features__list,
+.team__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
   list-style-type: none;
-  padding:0;
+  padding: 0;
 }
 
 .features__list li {
@@ -41,7 +43,7 @@
   gap: 20px;
 }
 
-.features__list li span{
+.features__list li span {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -52,29 +54,30 @@
   border-radius: 6px;
 }
 
-.team__list span a{
+.team__list span a {
   color: var(--gray-500);
   gap: 20px;
 }
 
-@media only screen and (max-width: 769px){ 
-  .hero-content{
+@media only screen and (max-width: 769px) {
+  .hero-content {
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
   }
 
-  .hero-wrapper{
+  .hero-wrapper {
     align-items: center;
     text-align: center;
   }
 
-  .features__list, .team__list{
+  .features__list,
+  .team__list {
     display: flex;
     flex-direction: column;
   }
 
-  .team__list{
+  .team__list {
     align-items: center;
     text-align: center;
   }

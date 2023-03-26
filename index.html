@@ -9,72 +9,82 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-      <header class="header">
-          <nav class="navbar container-lg">
-            <a
-              href="/index.html"
-              class="navbar__logo text-decoration-none heading-xs light"
+    <header class="header">
+      <nav class="navbar container-lg">
+        <a
+          href="/index.html"
+          class="navbar__logo text-decoration-none heading-xs light"
+        >
+          <b>yahaira</b>collado()
+        </a>
+
+        <!-- Hamburguer menu -->
+        <input class="navbar__menu-btn" type="checkbox" id="menu-btn" />
+        <label class="navbar__menu-icon" for="menu-btn">
+          <i class="ri-menu-line navicon"></i>
+        </label>
+
+        <ul class="navbar__links list-style-none">
+          <li>
+            <a href="/about.html" class="link text-lg semibold">About</a>
+          </li>
+          <li>
+            <a href="/portfolio.html" class="link text-lg semibold"
+              >Portfolio</a
             >
-              <b>yahaira</b>collado()
+          </li>
+          <li>
+            <a href="/blog.html" class="link text-lg semibold">Blog</a>
+          </li>
+          <li>
+            <a
+              href="/contact.html"
+              class="button button--md button--primary text-decoration-none ml-2"
+            >
+              Contact Me
+              <i class="ri-arrow-right-up-line"></i>
             </a>
-  
-            <!-- Hamburguer menu -->
-            <input class="navbar__menu-btn" type="checkbox" id="menu-btn" />
-            <label class="navbar__menu-icon" for="menu-btn">
-              <i class="ri-menu-line navicon"></i>
-            </label>
-  
-            <ul class="navbar__links list-style-none">
-              <li>
-                <a href="/about.html" class="link text-lg semibold">About</a>
-              </li>
-              <li>
-                <a href="/portfolio.html"  class="link text-lg semibold">Portfolio</a>
-              </li>
-              <li>
-                <a href="/blog.html" class="link text-lg semibold">Blog</a>
-              </li>
-              <li>
-                <a
-                href="/contact.html"
-                class="button button--md button--primary text-decoration-none ml-2"
-                > 
-                  Contact Me
-                  <i class="ri-arrow-right-up-line"></i>
-                </a>
-              </li>
-              <li>
-                <span class="navbar__links-social">
-                  <a href="https://www.linkedin.com/in/yahairacollado/" target="_blank" class="social-media__icon text-decoration-none ml-4">
-                    <i class="ri-linkedin-fill"></i>
-                  </a>
-                  <a href="https://github.com/yahairacollado" target="_blank" class="social-media__icon text-decoration-none ml-2">
-                    <i class="ri-github-fill"></i>
-                  </a>
-                </span>
-              </li>
-            </ul>
-          </nav>
-      </header>
+          </li>
+          <li>
+            <span class="navbar__links-social">
+              <a
+                href="https://www.linkedin.com/in/yahairacollado/"
+                target="_blank"
+                class="social-media__icon text-decoration-none ml-4"
+              >
+                <i class="ri-linkedin-fill"></i>
+              </a>
+              <a
+                href="https://github.com/yahairacollado"
+                target="_blank"
+                class="social-media__icon text-decoration-none ml-2"
+              >
+                <i class="ri-github-fill"></i>
+              </a>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main class="home">
       <section class="home__hero section-sm container-lg">
-         <div class="home__hero-content">
-          <h2 class="heading-lg semibold">
-            Hello, world! 👇
-          </h2>
-          <br/>
+        <div class="home__hero-content">
+          <h2 class="heading-lg semibold">Hello, world! 👇</h2>
+          <br />
 
-          <h2 class="heading-2xl semibold">I'm Yahaira Collado
-          </h2>
+          <h2 class="heading-2xl semibold">I'm Yahaira Collado</h2>
           <p class="heading-xl black color-primary">
-            [ Fullstack Developer, <br/>
-             Designer ]
+            [ Fullstack Developer, <br />
+            Designer ]
           </p>
-          <br/>
-  
-          <p class="heading-sm medium">Currently located in Lima, Peru. <br/> I love building interactive, digital experiences on the web.</p>
-          <br/>
+          <br />
+
+          <p class="heading-sm medium">
+            Currently located in Lima, Peru. <br />
+            I love building interactive, digital experiences on the web.
+          </p>
+          <br />
 
           <span class="home__hero-buttons">
             <a
@@ -91,7 +101,7 @@
               <i class="ri-arrow-right-up-line"></i>
             </a>
           </span>
-         </div>
+        </div>
       </section>
       <section class="section-sm home__skills">
         <div class="container-lg home__skills-content">
@@ -100,7 +110,6 @@
             <p class="section-title">⚙️ MY SKILLS</p>
             <div class="section-title-line"></div>
           </div>
-
         </div>
       </section>
 
@@ -111,7 +120,6 @@
             <p class="section-title">📌 MY CRAFT</p>
             <div class="section-title-line"></div>
           </div>
-          
         </div>
       </section>
 
@@ -119,10 +127,9 @@
         <div class="container-lg home__blog-content">
           <div class="section-title-wrap">
             <div class="section-title-line"></div>
-            <p class="section-title">📝  LATEST ARTICLES</p>
+            <p class="section-title">📝 LATEST ARTICLES</p>
             <div class="section-title-line"></div>
           </div>
-          
         </div>
       </section>
     </main>
@@ -205,40 +212,55 @@
         </div>
       </div>
     </main> -->
-    
+
     <footer class="footer">
-      <div class="container-lg section-padding-lg  footer__banner">
-        <h2 class="heading-lg semibold">Have A Project In Mind?</h2>
-        <p class="text-xl">You're looking for a solid partner for the project having in your mind. <br/>
-          Let's talk to make your work easier.</p>
-        <a
-          href="/contact.html"
-          class="button button--primary text-decoration-none"
-          >Get Started
-          <i class="ri-arrow-right-up-line"></i>
-        </a>
+      <div class="container-lg">
+        <div class="footer__banner section-padding-lg">
+          <h2 class="heading-lg semibold">Have A Project In Mind?</h2>
+          <p class="text-xl">
+            You're looking for a solid partner for the project having in your
+            mind. <br />
+            Let's talk to make your work easier.
+          </p>
+          <a
+            href="/contact.html"
+            class="button button--primary text-decoration-none"
+            >Get Started
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </div>
       </div>
 
       <div class="footer__wrapper">
         <div class="footer__menu section-padding-lg container-lg">
           <ul class="footer__menu-links list-style-none">
             <li>
-              <a href="/about.html" class="heading-sm text-decoration-none">About</a>
+              <a href="/about.html" class="heading-sm text-decoration-none"
+                >About</a
+              >
             </li>
             <li>
-              <a href="/portfolio.html"  class="heading-sm text-decoration-none ">Portfolio</a>
+              <a href="/portfolio.html" class="heading-sm text-decoration-none"
+                >Portfolio</a
+              >
             </li>
             <li>
-              <a href="/blog.html" class="heading-sm text-decoration-none ">Blog</a>
+              <a href="/blog.html" class="heading-sm text-decoration-none"
+                >Blog</a
+              >
             </li>
             <li>
-              <a
-              href="/contact.html"
-              class="heading-sm text-decoration-none"> Contact</a>
+              <a href="/contact.html" class="heading-sm text-decoration-none">
+                Contact</a
+              >
             </li>
           </ul>
-          <span class="footer__menu-mailing heading-sm">Seeking new talent for your organization?
-            <a class="button button--secondary text-decoration-none ml-4" href="mailto:yahairavittoria@gmail.com">
+          <span class="footer__menu-mailing heading-sm"
+            >Seeking new talent for your organization?
+            <a
+              class="button button--secondary text-decoration-none ml-4"
+              href="mailto:yahairavittoria@gmail.com"
+            >
               Hire me
               <i class="ri-arrow-right-up-line"></i>
             </a>

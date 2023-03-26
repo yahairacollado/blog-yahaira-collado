@@ -1,4 +1,4 @@
-.home{
+.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,7 +6,7 @@
   width: 100%;
 }
 
-.home__hero{
+.home__hero {
   width: 100%;
 }
 
@@ -19,8 +19,7 @@
   padding: 3rem 1.25rem;
 }
 
-
-.home__hero-buttons{
+.home__hero-buttons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -28,16 +27,16 @@
   margin: 1rem 0;
 }
 
-.home__skills, .home__work, .home__blog{
+.home__skills,
+.home__work,
+.home__blog {
   width: 100%;
-  
 }
 
 @media only screen and (max-width: 769px) {
-  .home__hero-buttons{
+  .home__hero-buttons {
     flex-direction: column;
     gap: 1rem;
     margin: 0;
   }
-
 }

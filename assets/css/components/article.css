@@ -16,13 +16,13 @@
   display: flex;
   flex-direction: column;
   gap: 0.625em;
-  padding: .5em;
+  padding: 0.5em;
 }
 
-.article{
+.article {
   padding-top: 4rem;
   /* font-size: 18px; */
-  color: var(--gray-900)
+  color: var(--gray-900);
 }
 
 .article > * {

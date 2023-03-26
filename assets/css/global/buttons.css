@@ -25,31 +25,35 @@
   font-size: 1.125rem;
 }
 
-
 /* button default */
 
 .button--default {
-  background-color: var(--gray-300);
-  color: var(--gray-900);
+  background-color: var(--gray-dark);
+  color: var(--white);
+  border: 1px solid var(--gray-dark);
 }
 
-.button--default:hover{
-  background-color: var(--gray-400);
+.button--default:hover {
+  background-color: var(--white);
+  color: var(--gray-dark);
+  border: 1px solid var(--gray-dark);
 }
 
-.button--default:active{
-  background-color: var(--gray-500);
+.button--default:active {
+  background-color: var(--white);
+  color: var(--gray-dark);
+  border: 1px solid var(--gray-dark);
 }
 
-.button--default:focus{
+/* .button--default:focus{
   outline: 3px solid var(--info);
   outline-offset: 1px;
-}
+} */
 
-.button--default:disabled{
+.button--default:disabled {
   opacity: 0.6;
   cursor: default;
-  background-color: var(--gray-300);
+  background-color: var(--gray-dark);
 }
 
 /* Button Primary */
@@ -80,7 +84,7 @@
 .button--primary:disabled {
   opacity: 0.6;
   cursor: default;
-  background-color: var(--primary);
+  background-color: var(--orange);
 }
 
 /* Button secondary */
@@ -111,5 +115,5 @@
 .button--secondary:disabled {
   opacity: 0.6;
   cursor: default;
-  background-color: var(--secondary);
+  background-color: var(--purple);
 }

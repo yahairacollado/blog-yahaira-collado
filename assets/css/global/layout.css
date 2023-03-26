@@ -1,7 +1,7 @@
 /* layouts */
 /* containers */
 .container-sm {
-  max-width: 40rem; 
+  max-width: 40rem;
   padding: 0 1.25rem;
   margin: auto;
 }
@@ -14,13 +14,13 @@
 }
 
 .container-lg {
-  max-width: 64rem; 
+  max-width: 64rem;
   padding: 0 1.25rem;
   margin: auto;
 }
 
 .container-xl {
-  max-width: 80rem; 
+  max-width: 80rem;
   padding: 0 1.25rem;
   margin: auto;
 }

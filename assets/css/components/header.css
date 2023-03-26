@@ -1,6 +1,5 @@
 /* Navbar*/
 .header {
-  background-color: var(--white);
   padding-top: 1.5rem;
 }
 
@@ -12,7 +11,7 @@
   letter-spacing: 2px;
 }
 
-.navbar__links-social{
+.navbar__links-social {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,12 +39,12 @@
 }
 
 /* Hamburguer menu */
-.navbar__links{
+.navbar__links {
   clear: both;
   max-height: 0;
-  transition: max-height .2s ease-out;
-}  
- 
+  transition: max-height 0.2s ease-out;
+}
+
 .navbar__menu-icon {
   cursor: pointer;
   display: flex;
@@ -54,36 +53,34 @@
   font-size: 1.5rem;
   color: var(--white);
   border-radius: 0.625rem;
-} 
+}
 
-input[type="checkbox"]:checked + .navbar__menu-icon{
+input[type="checkbox"]:checked + .navbar__menu-icon {
   background-color: var(--orange);
 }
 
-input[type="checkbox"]:not(:checked) +
-.navbar__menu-icon{
+input[type="checkbox"]:not(:checked) + .navbar__menu-icon {
   background-color: var(--blue);
 }
 
 .header .navbar__menu-btn {
   display: none;
 }
- 
+
 .header .navbar__menu-btn:checked ~ .navbar__links {
   max-height: 20rem;
 }
 
-
 /* Responsive */
-@media only screen and (max-width: 768px){
-  .navbar__links{
+@media only screen and (max-width: 768px) {
+  .navbar__links {
     flex-direction: column;
-  }  
+  }
   .navbar__links .link {
     padding: 1.25rem;
   }
 
-  .navbar__links-social{
+  .navbar__links-social {
     padding-top: 1.5rem;
   }
 }
@@ -94,13 +91,13 @@ input[type="checkbox"]:not(:checked) +
     font-family: var(--font-secondary);
     padding: 0 1.25rem;
   }
-  
+
   .navbar__links {
     clear: none;
     float: right;
     max-height: none;
   }
-  
+
   .navbar__menu-icon {
     display: none;
   }
