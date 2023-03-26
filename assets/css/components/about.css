@@ -1,15 +1,8 @@
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.about__hero-wrapper {
+.about__hero {
   position: relative;
 }
 
-.background-wrapper {
+.about__hero-wrapper {
   position: absolute; /* Set the position of the wrapper */
   top: 0;
   left: 0;
@@ -44,7 +37,7 @@
 .about__education-wrapper,
 .about__work-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: 1fr 1.6fr;
 }
 
 .about__education-list,
@@ -97,37 +90,6 @@
   list-style-image: url(../../icons/check.svg);
   list-style-type: disc;
 }
-
-/* .skills, .hobbies{
-  text-align: center;
-}
-
-.skills h2, .hobbies h2 {
-  padding-bottom: 1rem;
-}
-
-.skills__list{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  list-style-type: none;
-  padding: 0;
-  gap: 2rem;
-}
-
-.skills__list li{
-  display: flex;
-  align-items: flex-start;
-  text-align: left;
-  gap: 1rem;
-}
-
-.hobbies__list{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  list-style-type: none;
-  gap: 2rem;
-  padding: 0;
-} */
 
 @media only screen and (max-width: 1025px) {
   .about__summary-wrapper {
