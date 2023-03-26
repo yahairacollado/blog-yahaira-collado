@@ -66,123 +66,346 @@
       </nav>
     </header>
 
-    <main class="section-lg portfolio">
-      <div class="container-lg">
-        <div class="portfolio__header">
-          <!-- All Work | Personal Work | Professional Work -->
-          <h2 class="heading-lg semibold">Portfolio</h2>
-          <p class="text-lg regular">Practice builds mastery</p>
+    <main class="section-lg portfolio text-align-center">
+      <section class="container-lg">
+        <div class="portfolio__hero section-padding-lg">
+          <a
+            href="#"
+            class="text-decoration-none flex__row-centered color-blue"
+          >
+            <i class="ri-arrow-left-line"></i>
+            <p class="bold heading-xs ml-2">Back To Home</p>
+          </a>
+          <h2 class="semibold heading-xl">Portfolio</h2>
         </div>
-        <ul class="portfolio__list">
-          <!-- First project -->
-          <li class="portfolio__card">
-            <div class="portfolio__card--icons">
-              <span>
-                <img src="./assets/icons/code.svg" alt="code icon" />
-                <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
-                <img src="./assets/icons/github.svg" alt="github icon" />
-              </span>
-              <a href="/project-page.html" target="_blank">
-                <img src="./assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </div>
-            <div class="portfolio__card--text">
-              <h2 class="heading-xs semibold">CalenCLI</h2>
-              <p class="text-lg light">
-                Doloribus dolores nostrum quia qui natus officia quod et
-                dolorem. Sit repellendus qui ut at blanditiis et quo et
-                molestiae.
-              </p>
-              <ul class="portfolio__card--badges">
-                <li class="text-xs regular">Control Flow</li>
-                <li class="text-xs regular">Dates</li>
-                <li class="text-xs regular">Methods</li>
-                <li class="text-xs regular">Loops</li>
-              </ul>
-            </div>
-          </li>
+      </section>
 
-          <!-- Second Project -->
-          <li class="portfolio__card">
-            <div class="portfolio__card--icons">
-              <span>
-                <img src="./assets/icons/code.svg" alt="code icon" />
-                <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
-                <img src="./assets/icons/github.svg" alt="github icon" />
-              </span>
-              <a href="/project-page.html" target="_blank">
-                <img src="./assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </div>
-            <div class="portfolio__card--text">
-              <h2 class="heading-xs semibold">Pokemon Ruby</h2>
-              <p class="text-lg light">
-                Doloribus dolores nostrum quia qui natus officia quod et
-                dolorem. Sit repellendus qui ut at blanditiis et quo et
-                molestiae.
-              </p>
-              <ul class="portfolio__card--badges">
-                <li class="text-xs regular">Classes</li>
-                <li class="text-xs regular">Modules</li>
-                <li class="text-xs regular">Inheritance</li>
-              </ul>
-            </div>
-          </li>
+      <div class="portfolio__tabs container-lg">
+        <div class="tabset">
+          <!-- Tab 1 -->
+          <input type="radio" name="tabset" id="tab1" aria-controls="all" checked>
+          <label for="tab1" class="button button--md">All 
+            <i class="ri-arrow-down-line"></i>
+          </label>
+          <!-- Tab 2 -->
+          <input type="radio" name="tabset" id="tab2" aria-controls="personal-work">
+          <label for="tab2" class="button button--md ml-2">Personal Work
+            <i class="ri-arrow-down-line"></i>
+          </label>
+          <!-- Tab 3 -->
+          <input type="radio" name="tabset" id="tab3" aria-controls="professional-work">
+          <label for="tab3" class="button button--md ml-2">Professional Work
+            <i class="ri-arrow-down-line"></i>
+          </label>
+          
+          <div class="tab-panels">
+            <section id="all" class="tab-panel section-padding-sm">
+              <div>
+                <div class="section-title-wrap">
+                  <div class="section-title-line"></div>
+                    <p class="section-title">📌 PERSONAL WORK</p>
+                  <div class="section-title-line"></div>
+                </div> 
+                <ul class="portfolio__list">
+                  <!-- First project -->
+                  <li class="portfolio__card">
+                    <div class="portfolio__card--icons">
+                      <span>
+                        <img src="./assets/icons/code.svg" alt="code icon" />
+                        <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
+                        <img src="./assets/icons/github.svg" alt="github icon" />
+                      </span>
+                      <a href="/project-page.html" target="_blank" class="text-decoration-none color-primary heading-md">
+                        <i class="ri-arrow-right-up-line"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio__card--text">
+                      <h2 class="heading-md semibold">CalenCLI</h2>
+                      <p class="text-xl medium color-secondary">
+                        Doloribus dolores nostrum quia qui natus officia quod et
+                        dolorem. Sit repellendus qui ut at blanditiis et quo et
+                        molestiae.
+                      </p>
+                      <ul class="portfolio__card--badges">
+                        <li class="text-xs regular">Control Flow</li>
+                        <li class="text-xs regular">Dates</li>
+                        <li class="text-xs regular">Methods</li>
+                        <li class="text-xs regular">Loops</li>
+                      </ul>
+                    </div>
+                  </li>
+        
+                  <!-- Second Project -->
+                  <li class="portfolio__card">
+                    <div class="portfolio__card--icons">
+                      <span>
+                        <img src="./assets/icons/code.svg" alt="code icon" />
+                        <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
+                        <img src="./assets/icons/github.svg" alt="github icon" />
+                      </span>
+                      <a href="/project-page.html" target="_blank" class="text-decoration-none color-primary heading-md">
+                        <i class="ri-arrow-right-up-line"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio__card--text">
+                      <h2 class="heading-md semibold">Pokemon Ruby</h2>
+                      <p class="text-xl medium color-secondary">
+                        Doloribus dolores nostrum quia qui natus officia quod et
+                        dolorem. Sit repellendus qui ut at blanditiis et quo et
+                        molestiae.
+                      </p>
+                      <ul class="portfolio__card--badges">
+                        <li class="text-xs regular">Classes</li>
+                        <li class="text-xs regular">Modules</li>
+                        <li class="text-xs regular">Inheritance</li>
+                      </ul>
+                    </div>
+                  </li>
+        
+                  <!-- Third Project -->
+                  <li class="portfolio__card">
+                    <div class="portfolio__card--icons">
+                      <span>
+                        <img src="./assets/icons/code.svg" alt="code icon" />
+                        <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
+                        <img src="./assets/icons/github.svg" alt="github icon" />
+                      </span>
+                      <a href="/project-page.html" target="_blank" class="text-decoration-none color-primary heading-md">
+                        <i class="ri-arrow-right-up-line"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio__card--text">
+                      <h2 class="heading-md semibold">CLIn Boards</h2>
+                      <p class="text-xl medium color-secondary">
+                        Doloribus dolores nostrum quia qui natus officia quod et
+                        dolorem. Sit repellendus qui ut at blanditiis et quo et
+                        molestiae.
+                      </p>
+                      <ul class="portfolio__card--badges">
+                        <li class="text-xs regular">File Manipulation</li>
+                        <li class="text-xs regular">Classes</li>
+                        <li class="text-xs regular">JSON</li>
+                      </ul>
+                    </div>
+                  </li>
+        
+                  <!-- Fourth Project -->
+                  <li class="portfolio__card">
+                    <div class="portfolio__card--icons">
+                      <span>
+                        <img src="./assets/icons/code.svg" alt="code icon" />
+                        <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
+                        <img src="./assets/icons/github.svg" alt="github icon" />
+                      </span>
+                      <a href="/project-page.html" target="_blank" class="text-decoration-none color-primary heading-md">
+                        <i class="ri-arrow-right-up-line"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio__card--text">
+                      <h2 class="heading-md semibold">Expensable CLI</h2>
+                      <p class="text-xl medium color-secondary">
+                        Doloribus dolores nostrum quia qui natus officia quod et
+                        dolorem. Sit repellendus qui ut at blanditiis et quo et
+                        molestiae.
+                      </p>
+                      <ul class="portfolio__card--badges">
+                        <li class="text-xs regular">HTTP Requests</li>
+                        <li class="text-xs regular">Classes</li>
+                        <li class="text-xs regular">Modules</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-          <!-- Third Project -->
-          <li class="portfolio__card">
-            <div class="portfolio__card--icons">
-              <span>
-                <img src="./assets/icons/code.svg" alt="code icon" />
-                <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
-                <img src="./assets/icons/github.svg" alt="github icon" />
-              </span>
-              <a href="/project-page.html" target="_blank">
-                <img src="./assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </div>
-            <div class="portfolio__card--text">
-              <h2 class="heading-xs semibold">CLIn Boards</h2>
-              <p class="text-lg light">
-                Doloribus dolores nostrum quia qui natus officia quod et
-                dolorem. Sit repellendus qui ut at blanditiis et quo et
-                molestiae.
-              </p>
-              <ul class="portfolio__card--badges">
-                <li class="text-xs regular">File Manipulation</li>
-                <li class="text-xs regular">Classes</li>
-                <li class="text-xs regular">JSON</li>
+              <div class="section-padding-sm">
+                <div class="section-title-wrap">
+                  <div class="section-title-line"></div>
+                    <p class="section-title">💼  PROFESSIONAL WORK</p>
+                  <div class="section-title-line"></div>
+                </div>     
+              </div>
+              <ul class="work__list">
+                <li class="work__card">
+                  <div class="word__card-content">
+                    <h2 class="semibold heading-lg">Tramy, a WhatsApp CRM for SMEs in Latin America </h2>
+                    <ul class="portfolio__card--badges semibold text-lg">
+                      <li class="word__card--badge">Frontend Developer</li>
+                      <li class="word__card--badge">UI Designer</li>
+                    </ul>
+                    <p class="text-lg medium color-secondary">
+                    Together with the CTO, we launched a functional MVP using ReactJS. I designed and implemented new features to improve user experience and increase engagement. Additionally, I led the development of the business landing page.</p>
+                    <a href="https://www.linkedin.com/company/tramy-io/?originalSubdomain=pe"  target="_blank" class="button text-decoration-none button--primary">
+                      Watch Site
+                      <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                  </div>
+                  <div class="slider">
+                    <div class="wrapper">
+                     <img src="./assets/images/blockmy_1.png" alt="">
+                     <img src="./assets/images/blockmy_2.png" alt="">
+                     <img src="./assets/images/blockmy_3.png" alt="">
+                     <img src="./assets/images/blockmy_4.png" alt="">
+                    </div>
+                  </div>
+                </li>
               </ul>
-            </div>
-          </li>
+            </section>
 
-          <!-- Fourth Project -->
-          <li class="portfolio__card">
-            <div class="portfolio__card--icons">
-              <span>
-                <img src="./assets/icons/code.svg" alt="code icon" />
-                <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
-                <img src="./assets/icons/github.svg" alt="github icon" />
-              </span>
-              <a href="/project-page.html" target="_blank">
-                <img src="./assets/icons/arrow.svg" alt="arrow" />
-              </a>
-            </div>
-            <div class="portfolio__card--text">
-              <h2 class="heading-xs semibold">Expensable CLI</h2>
-              <p class="text-lg light">
-                Doloribus dolores nostrum quia qui natus officia quod et
-                dolorem. Sit repellendus qui ut at blanditiis et quo et
-                molestiae.
-              </p>
-              <ul class="portfolio__card--badges">
-                <li class="text-xs regular">HTTP Requests</li>
-                <li class="text-xs regular">Classes</li>
-                <li class="text-xs regular">Modules</li>
+            <section id="personal-work" class="tab-panel section-padding-sm">
+              <div class="section-title-wrap">
+                <div class="section-title-line"></div>
+                  <p class="section-title">📌 PERSONAL WORK</p>
+                <div class="section-title-line"></div>
+              </div>
+              <ul class="portfolio__list">
+                <!-- First project -->
+                <li class="portfolio__card">
+                  <div class="portfolio__card--icons">
+                    <span>
+                      <img src="./assets/icons/code.svg" alt="code icon" />
+                      <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
+                      <img src="./assets/icons/github.svg" alt="github icon" />
+                    </span>
+                    <a href="/project-page.html" target="_blank" class="text-decoration-none color-primary heading-md">
+                      <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                  </div>
+                  <div class="portfolio__card--text">
+                    <h2 class="heading-md semibold">CalenCLI</h2>
+                    <p class="text-xl medium color-secondary">
+                      Doloribus dolores nostrum quia qui natus officia quod et
+                      dolorem. Sit repellendus qui ut at blanditiis et quo et
+                      molestiae.
+                    </p>
+                    <ul class="portfolio__card--badges">
+                      <li class="text-xs regular">Control Flow</li>
+                      <li class="text-xs regular">Dates</li>
+                      <li class="text-xs regular">Methods</li>
+                      <li class="text-xs regular">Loops</li>
+                    </ul>
+                  </div>
+                </li>
+      
+                <!-- Second Project -->
+                <li class="portfolio__card">
+                  <div class="portfolio__card--icons">
+                    <span>
+                      <img src="./assets/icons/code.svg" alt="code icon" />
+                      <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
+                      <img src="./assets/icons/github.svg" alt="github icon" />
+                    </span>
+                    <a href="/project-page.html" target="_blank" class="text-decoration-none color-primary heading-md">
+                      <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                  </div>
+                  <div class="portfolio__card--text">
+                    <h2 class="heading-md semibold">Pokemon Ruby</h2>
+                    <p class="text-xl medium color-secondary">
+                      Doloribus dolores nostrum quia qui natus officia quod et
+                      dolorem. Sit repellendus qui ut at blanditiis et quo et
+                      molestiae.
+                    </p>
+                    <ul class="portfolio__card--badges">
+                      <li class="text-xs regular">Classes</li>
+                      <li class="text-xs regular">Modules</li>
+                      <li class="text-xs regular">Inheritance</li>
+                    </ul>
+                  </div>
+                </li>
+      
+                <!-- Third Project -->
+                <li class="portfolio__card">
+                  <div class="portfolio__card--icons">
+                    <span>
+                      <img src="./assets/icons/code.svg" alt="code icon" />
+                      <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
+                      <img src="./assets/icons/github.svg" alt="github icon" />
+                    </span>
+                    <a href="/project-page.html" target="_blank" class="text-decoration-none color-primary heading-md">
+                      <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                  </div>
+                  <div class="portfolio__card--text">
+                    <h2 class="heading-md semibold">CLIn Boards</h2>
+                    <p class="text-xl medium color-secondary">
+                      Doloribus dolores nostrum quia qui natus officia quod et
+                      dolorem. Sit repellendus qui ut at blanditiis et quo et
+                      molestiae.
+                    </p>
+                    <ul class="portfolio__card--badges">
+                      <li class="text-xs regular">File Manipulation</li>
+                      <li class="text-xs regular">Classes</li>
+                      <li class="text-xs regular">JSON</li>
+                    </ul>
+                  </div>
+                </li>
+      
+                <!-- Fourth Project -->
+                <li class="portfolio__card">
+                  <div class="portfolio__card--icons">
+                    <span>
+                      <img src="./assets/icons/code.svg" alt="code icon" />
+                      <img src="./assets/icons/ruby-red.svg" alt="ruby icon" />
+                      <img src="./assets/icons/github.svg" alt="github icon" />
+                    </span>
+                    <a href="/project-page.html" target="_blank" class="text-decoration-none color-primary heading-md">
+                      <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                  </div>
+                  <div class="portfolio__card--text">
+                    <h2 class="heading-md semibold">Expensable CLI</h2>
+                    <p class="text-xl medium color-secondary">
+                      Doloribus dolores nostrum quia qui natus officia quod et
+                      dolorem. Sit repellendus qui ut at blanditiis et quo et
+                      molestiae.
+                    </p>
+                    <ul class="portfolio__card--badges">
+                      <li class="text-xs regular">HTTP Requests</li>
+                      <li class="text-xs regular">Classes</li>
+                      <li class="text-xs regular">Modules</li>
+                    </ul>
+                  </div>
+                </li>
               </ul>
-            </div>
-          </li>
-        </ul>
+            </section>
+
+            <section id="professional-work" class="tab-panel section-padding-sm">
+              <div class="section-padding-sm">
+                <div class="section-title-wrap">
+                  <div class="section-title-line"></div>
+                    <p class="section-title">💼  PROFESSIONAL WORK</p>
+                  <div class="section-title-line"></div>
+                </div>     
+              </div>
+              <ul class="work__list">
+                <li class="work__card">
+                  <div class="word__card-content">
+                    <h2 class="semibold heading-lg">Tramy, a WhatsApp CRM for SMEs in Latin America </h2>
+                    <ul class="portfolio__card--badges semibold text-lg">
+                      <li class="word__card--badge">Frontend Developer</li>
+                      <li class="word__card--badge">UI Designer</li>
+                    </ul>
+                    <p class="text-lg medium color-secondary">
+                    Together with the CTO, we launched a functional MVP using ReactJS. I designed and implemented new features to improve user experience and increase engagement. Additionally, I led the development of the business landing page.</p>
+                    <a href="https://www.linkedin.com/company/tramy-io/?originalSubdomain=pe"  target="_blank" class="button text-decoration-none button--primary">
+                      Watch Site
+                      <i class="ri-arrow-right-up-line"></i>
+                    </a>
+                  </div>
+                  <div class="slider">
+                    <div class="wrapper">
+                     <img src="./assets/images/blockmy_1.png" alt="">
+                     <img src="./assets/images/blockmy_2.png" alt="">
+                     <img src="./assets/images/blockmy_3.png" alt="">
+                     <img src="./assets/images/blockmy_4.png" alt="">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+        </div>
+
       </div>
     </main>
 
