@@ -94,4 +94,12 @@
   --background: var(--gray-100);
   --background-dark: var(--gray-200);
   --background-darker: var(--gray-300);
+
+  /* Custom Design */
+  --orange: #ff774c;
+  --blue: #242F65;
+  --purple: #7390F9;
+  --gray:#2f2f2f;
+  --gray-light: #525665;
+  --gray-dark: #2A2C32;
 }

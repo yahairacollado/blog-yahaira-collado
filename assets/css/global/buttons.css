@@ -1,12 +1,12 @@
 /* button */
 .button {
   border: none;
-  border-radius: 0.5rem;
-  font-size: 1rem;
+  border-radius: 0.625rem;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 1rem;
   text-transform: capitalize;
-  padding: 0.75rem 1rem;
+  padding: 1.25rem 3.125rem;
   cursor: pointer;
 
   display: flex;
@@ -20,8 +20,8 @@
   font-size: 0.875rem;
 }
 
-.button--lg {
-  padding: 0.875rem 1.5rem;;
+.button--md {
+  padding: 0.875rem 1.5rem;
   font-size: 1.125rem;
 }
 
@@ -55,22 +55,27 @@
 /* Button Primary */
 
 .button--primary {
-  background-color: var(--primary);
+  background-color: var(--orange);
   color: var(--white);
+  border: 1px solid var(--orange);
 }
 
 .button--primary:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--white);
+  color: var(--orange);
+  border: 1px solid var(--orange);
 }
 
 .button--primary:active {
-  background-color: var(--primary-darker);
+  background-color: var(--white);
+  color: var(--orange);
+  border: 1px solid var(--orange);
 }
 
-.button--primary:focus {
+/* .button--primary:focus {
   outline: 3px solid var(--info);
   outline-offset: 1px;
-}
+} */
 
 .button--primary:disabled {
   opacity: 0.6;
@@ -81,22 +86,27 @@
 /* Button secondary */
 
 .button--secondary {
-  background-color: var(--secondary);
+  background-color: var(--purple);
   color: var(--white);
+  border: 1px solid var(--purple);
 }
 
 .button--secondary:hover {
-  background-color: var(--secondary-dark);
+  background-color: var(--white);
+  color: var(--purple);
+  border: 1px solid var(--purple);
 }
 
 .button--secondary:active {
-  background-color: var(--secondary-darker);
+  background-color: var(--white);
+  color: var(--purple);
+  border: 1px solid var(--purple);
 }
 
-.button--secondary:focus {
+/* .button--secondary:focus {
   outline: 3px solid var(--info);
   outline-offset: 1px;
-}
+} */
 
 .button--secondary:disabled {
   opacity: 0.6;

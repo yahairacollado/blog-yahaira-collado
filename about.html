@@ -8,60 +8,65 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-  <div class="menu-wrapper">
-    <header class="header">
-      <div class="container-lg">
-        <nav class="navbar">
+  <header class="header">
+    <nav class="navbar container-lg">
+      <a
+        href="/index.html"
+        class="navbar__logo text-decoration-none heading-xs light"
+      >
+        <b>yahaira</b>collado()
+      </a>
+
+      <!-- Hamburguer menu -->
+      <input class="navbar__menu-btn" type="checkbox" id="menu-btn" />
+      <label class="navbar__menu-icon" for="menu-btn">
+        <i class="ri-menu-line navicon"></i>
+      </label>
+
+      <ul class="navbar__links list-style-none">
+        <li>
+          <a href="/about.html" class="link text-lg semibold">About</a>
+        </li>
+        <li>
+          <a href="/portfolio.html"  class="link text-lg semibold">Portfolio</a>
+        </li>
+        <li>
+          <a href="/blog.html" class="link text-lg semibold">Blog</a>
+        </li>
+        <li>
           <a
-            href="/index.html"
-            class="navbar__logo heading-md semibold text-decoration-none"
-          >
-            <span> Yahaira Collado </span>
+          href="/contact.html"
+          class="button button--md button--primary text-decoration-none ml-2"
+          > 
+            Contact Me
+            <i class="ri-arrow-right-up-line"></i>
           </a>
+        </li>
+        <li>
+          <span class="navbar__links-social">
+            <a href="https://www.linkedin.com/in/yahairacollado/" target="_blank" class="social-media__icon text-decoration-none ml-4">
+              <i class="ri-linkedin-fill"></i>
+            </a>
+            <a href="https://github.com/yahairacollado" target="_blank" class="social-media__icon text-decoration-none ml-2">
+              <i class="ri-github-fill"></i>
+            </a>
+          </span>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-          <!-- Hamburguer menu -->
-          <input class="navbar__menu-btn" type="checkbox" id="menu-btn" />
-          <label class="navbar__menu-icon" for="menu-btn">
-            <span class="navicon"></span>
-          </label>
-
-          <ul class="navbar__links list-style-none">
-            <li>
-              <a href="#" class="link text-md semibold">Articles</a>
-            </li>
-            <li>
-              <a href="/portfolio.html"  class="link text-md semibold">Portfolio</a>
-            </li>
-            <li>
-              <a href="/about.html" class="link text-md semibold">About</a>
-            </li>
-            <li>
-              <a
-                href="/contact.html"
-                class="button button--primary button--sm text-decoration-none ml-4"
-                >Contact Me</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-   </div>
-
-   <section class="section-padding-md bg-color-secondary-light">
+   <!-- <section class="section-padding-md bg-color-secondary-light">
     <div class="container-lg">
       <h2 class="heading-xl regular">
         Hi! I’m <span class="semibold color-primary">Yahaira Collado</span>, full
         stack developer looking for new adventures
       </h2>
       <p class="text-xl light">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget velit
-        risus tellus viverra luctus in odio amet. Quisque viverra integer
-        lectus euismod quisque adipiscing. Sed posuere sed bibendum mi orci,
-        commodo, quam. Sagittis, donec sit bibendum mi nisl semper sed.
+        I'm currently based in Lima, Peru and work remotely with clients and partners worldwide.
       </p>
     </div>
-  </section>
+  </section> -->
 
   <main>
     <section class="section-lg skills">
@@ -151,15 +156,46 @@
   </main>
 
   <footer class="footer">
-    <div class="container-lg footer__content">
-      <h2 class="heading-xl semibold footer__content__title">
-        Can I Help you?
-      </h2>
+    <div class="container-lg section-padding-lg  footer__banner">
+      <h2 class="heading-lg semibold">Have A Project In Mind?</h2>
+      <p class="text-xl">You're looking for a solid partner for the project having in your mind. <br/>
+        Let's talk to make your work easier.</p>
       <a
-      href="mailto:yahairavittoria@gmail.com"
-      class="button button--primary text-decoration-none ml-4"
-      >Get In Touch!
-    </a>
+        href="/contact.html"
+        class="button button--primary text-decoration-none"
+        >Get Started
+        <i class="ri-arrow-right-up-line"></i>
+      </a>
+    </div>
+
+    <div class="footer__wrapper">
+      <div class="footer__menu section-padding-lg container-lg">
+        <ul class="footer__menu-links list-style-none">
+          <li>
+            <a href="/about.html" class="heading-sm text-decoration-none">About</a>
+          </li>
+          <li>
+            <a href="/portfolio.html"  class="heading-sm text-decoration-none ">Portfolio</a>
+          </li>
+          <li>
+            <a href="/blog.html" class="heading-sm text-decoration-none ">Blog</a>
+          </li>
+          <li>
+            <a
+            href="/contact.html"
+            class="heading-sm text-decoration-none"> Contact</a>
+          </li>
+        </ul>
+        <span class="footer__menu-mailing heading-sm">Seeking new talent for your organization?
+          <a class="button button--secondary text-decoration-none ml-4" href="mailto:yahairavittoria@gmail.com">
+            Hire me
+            <i class="ri-arrow-right-up-line"></i>
+          </a>
+        </span>
+      </div>
+      <p class="footer__copyright text-xl">
+        Copyright © 2023 Yahaira Collado
+      </p>
     </div>
   </footer>
 </body>
