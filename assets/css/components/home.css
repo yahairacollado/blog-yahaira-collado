@@ -3,11 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-.home__hero {
-  width: 100%;
 }
 
 .home__hero-content {
@@ -25,12 +20,6 @@
   justify-content: center;
   align-items: center;
   margin: 1rem 0;
-}
-
-.home__skills,
-.home__work,
-.home__blog {
-  width: 100%;
 }
 
 @media only screen and (max-width: 769px) {

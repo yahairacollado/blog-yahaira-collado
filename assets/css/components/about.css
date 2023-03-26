@@ -3,14 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-}
-
-.about__hero,
-.about__education,
-.about__work,
-.about__summary {
-  width: 100%;
 }
 
 .about__hero-wrapper {
