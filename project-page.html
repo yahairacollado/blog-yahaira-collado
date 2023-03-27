@@ -67,41 +67,89 @@
       </nav>
     </header>
 
-    <main>
-      <section class="section-lg hero">
-        <div class="container-lg">
-          <div class="hero-content">
-            <div class="hero-wrapper">
-              <h2 class="heading-lg semibold">CalenCLI</h2>
-              <p class="text-lg regular">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
-              </p>
-              <a href="#" class="button button--primary text-decoration-none"
-                >Go to the repo
-              </a>
-            </div>
-            <img src="./assets/images/banner-image.jpeg" alt="console" />
+    <main class="flex__column-centered text-align-center container-lg w-full">
+      <!-- Project Resume -->
+      <section
+        class="project-page__hero section-sm container-lg section-padding-lg w-full"
+      >
+        <a href="#" class="text-decoration-none flex__row-centered color-blue">
+          <i class="ri-arrow-left-line"></i>
+          <p class="bold heading-xs ml-2">Back To Home</p>
+        </a>
+        <h2 class="semibold heading-xl">Title Project</h2>
+      </section>
+
+      <section class="section-padding-md project-page__image w-full">
+        <img src="./assets/images/banner-image.jpeg" alt="console" />
+      </section>
+
+      <section class="section-padding-lg w-full">
+        <div class="project-page__content">
+          <div class="project-page__summary">
+            <h2 class="heading-lg semibold">Project Summary</h2>
+            <p class="text-lg regular">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              corrupti nam illum animi facilis! Laudantium voluptas, modi quis
+              debitis recusandae quisquam iusto aut minima expedita dolores
+              veritatis nobis, facilis praesentium?
+              <br /><br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+              corrupti nam illum animi facilis! Laudantium voluptas, modi quis
+              debitis recusandae quisquam iusto aut minima expedita dolores
+              veritatis nobis, facilis praesentium?
+            </p>
+            <a href="#" class="button button--primary text-decoration-none"
+              >Go to the repo
+              <i class="ri-arrow-right-up-line"></i>
+            </a>
+          </div>
+
+          <div class="project-page__details">
+            <h2 class="heading-lg semibold">Project Details</h2>
+            <ul class="list-style-none">
+              <li>
+                <h2 class="text-xl semibold">Role:</h2>
+                <p class="medium text-xl color-secondary">role</p>
+              </li>
+              <li>
+                <h2 class="text-xl semibold">Duration:</h2>
+                <p class="medium text-xl color-secondary">
+                  October - December 2022 (6 weeks)
+                </p>
+              </li>
+              <li>
+                <h2 class="text-xl semibold">Website:</h2>
+                <a class="medium text-xl color-purple text-decoration-none"
+                  >Visit Website</a
+                >
+              </li>
+              <li>
+                <h2 class="text-xl semibold">Tools:</h2>
+                <p class="medium text-xl color-secondary">Figma, VS Code</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
 
-      <section class="section-lg section-padding-lg features">
-        <div class="container-lg">
+      <!-- Technologies Used -->
+      <section class="section-padding-lg container-lg features">
+        <div class="">
           <div class="features__header">
-            <h2 class="heading-lg semibold">How it was built</h2>
-            <p class="text-lg light">
+            <h2 class="heading-md semibold text-align-center">
+              How it was built ✅
+            </h2>
+            <!-- <p class="text-xl medium text-align-center">
               Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor
               ultricies donec risus sodales. Tempus quis et.
-            </p>
+            </p> -->
           </div>
           <ul class="features__list">
             <li>
-              <span>
-                <img src="./assets/icons/code.svg" alt="code icon" />
+              <span style="background-color: #aec6cf">
+                <img src="./assets/icons/terminal.png" alt="code icon" />
               </span>
-              <h2 class="text-lg semibold">Build on the terminal</h2>
+              <h2 class="text-xl regular">Build on the terminal</h2>
               <p class="text-md light">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Maiores impedit perferendis suscipit eaque, iste dolor
@@ -109,10 +157,10 @@
               </p>
             </li>
             <li>
-              <span>
-                <img src="./assets/icons/ruby.svg" alt="ruby icon" />
+              <span style="background-color: #b87f6b">
+                <img src="./assets/icons/ruby.png" alt="ruby icon" />
               </span>
-              <h2 class="text-lg semibold">Ruby</h2>
+              <h2 class="text-xl regular">Ruby</h2>
               <p class="text-md light">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Maiores impedit perferendis suscipit eaque, iste dolor
@@ -120,10 +168,10 @@
               </p>
             </li>
             <li>
-              <span>
-                <img src="./assets/icons/github.svg" alt="github icon" />
+              <span style="background-color: #a8afd4">
+                <img src="./assets/icons/github.png" alt="github icon" />
               </span>
-              <h2 class="text-lg semibold">Professional Version Control</h2>
+              <h2 class="text-xl regular">Professional Version Control</h2>
               <p class="text-md light">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Maiores impedit perferendis suscipit eaque, iste dolor
@@ -133,54 +181,69 @@
           </ul>
         </div>
       </section>
-      <section class="section-lg team">
-        <div class="container-lg">
-          <div class="team__header">
-            <h2 class="heading-lg semibold">Our team</h2>
-            <p class="text-lg light">
-              Odio nisi, lectus dis nulla. Ultrices maecenas vitae rutrum dolor
-              ultricies donec risus sodales. Tempus quis et.
-            </p>
-          </div>
-          <ul class="team__list">
-            <li>
-              <img src="./assets/images/avatar-1.png" alt="avatar" />
-              <p class="text-lg semibold color-primary-dark">Claudia Zelada</p>
-              <span>
+
+      <!-- Team -->
+      <section class="section-lg team w-full">
+        <ul class="team__list list-style-none w-full">
+          <h2 class="heading-lg semibold">Team Members</h2>
+          <li class="flex__column-centered">
+            <img
+              src="./assets/images/avatar-1.jpg"
+              alt="avatar"
+              class="imagen-redondeada"
+            />
+            <span>
+              <p class="text-xl color-blue">Claudia Zelada</p>
+              <p class="text-lg medium color-secondary">Developer</p>
+            </span>
+            <!-- <span>
                 <a href="#" target="_blank" class="text-decoration-none"
                   ><i class="ri-github-fill"></i
                 ></a>
                 <a href="#" target="_blank" class="text-decoration-none"
                   ><i class="ri-linkedin-box-fill"></i
                 ></a>
-              </span>
-            </li>
-            <li>
-              <img src="./assets/images/avatar-2.png" alt="avatar" />
-              <p class="text-lg semibold color-primary-dark">Javier Cadillo</p>
-              <span>
+              </span> -->
+          </li>
+          <li class="flex__column-centered">
+            <img
+              src="./assets/images/avatar-2.jpg"
+              alt="avatar"
+              class="imagen-redondeada"
+            />
+            <span>
+              <p class="text-xl color-blue">Javier Carrillo</p>
+              <p class="text-lg medium color-secondary">Developer</p>
+            </span>
+            <!-- <span>
                 <a href="#" target="_blank" class="text-decoration-none"
                   ><i class="ri-github-fill"></i
                 ></a>
                 <a href="#" target="_blank" class="text-decoration-none"
                   ><i class="ri-linkedin-box-fill"></i
                 ></a>
-              </span>
-            </li>
-            <li>
-              <img src="./assets/images/avatar-3.png" alt="avatar" />
-              <p class="text-lg semibold color-primary-dark">Ximena Vera</p>
-              <span>
+              </span> -->
+          </li>
+          <li class="flex__column-centered">
+            <img
+              src="./assets/images/avatar-2.jpg"
+              alt="avatar"
+              class="imagen-redondeada"
+            />
+            <span>
+              <p class="text-xl color-blue">Ximena Liu</p>
+              <p class="text-lg medium color-secondary">Developer</p>
+            </span>
+            <!-- <span>
                 <a href="#" target="_blank" class="text-decoration-none"
                   ><i class="ri-github-fill"></i
                 ></a>
                 <a href="#" target="_blank" class="text-decoration-none"
                   ><i class="ri-linkedin-box-fill"></i
                 ></a>
-              </span>
-            </li>
-          </ul>
-        </div>
+              </span> -->
+          </li>
+        </ul>
       </section>
     </main>
 

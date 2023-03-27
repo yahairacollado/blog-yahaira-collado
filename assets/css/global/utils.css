@@ -179,6 +179,10 @@
   animation: slide 16s infinite;
 }
 
+.imagen-redondeada{
+  border-radius: 50%;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0);

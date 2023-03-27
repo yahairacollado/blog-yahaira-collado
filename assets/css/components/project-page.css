@@ -1,23 +1,60 @@
-.hero {
-  background-color: var(--gray-100);
-}
-.hero-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0;
+.project-page__hero {
+  border-radius: 1.25rem;
+  background-image: url("../../images/background.jpeg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.hero-wrapper {
+.project-page__image {
+  background-color: #d4bfff;
+  border-radius: 30px;
+  box-shadow: 0 2px 13px 0 rgb(0 0 0 / 9%);
+}
+
+.project-page__image img {
+  width: 50%;
+  margin: auto;
+}
+
+.project-page__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+  gap: 2rem;
+}
+
+.project-page__summary,
+.project-page__details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 2rem;
-  gap: 2.5rem;
+  gap: 2rem;
+}
+
+.project-page__details ul {
+  background-color: #efefef;
+  padding: 2.5rem;
+  border-radius: 1.25rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-page__details li {
+  display: block;
 }
 
 .features {
-  background-color: var(--secondary-light);
+  background-color: var(--gray-dark);
+  color: var(--white);
+  border-radius: 1.25rem;
+  text-align: start;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .features__header,
@@ -26,13 +63,13 @@
   padding-bottom: 1rem;
 }
 
-.features__list,
-.team__list {
+.features__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .features__list li {
@@ -44,41 +81,39 @@
 }
 
 .features__list li span {
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.features__list li span img {
+  width: 2.5rem;
+}
+
+.team__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 48px;
-  height: 48px;
-  background-color: var(--gray-100);
-  border-radius: 6px;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  border: 1px solid #efefef;
+  border-radius: 1.25rem;
 }
 
-.team__list span a {
-  color: var(--gray-500);
-  gap: 20px;
+.team__list li{
+  gap: 1rem;
 }
-
 @media only screen and (max-width: 769px) {
-  .hero-content {
+  .project-page__content {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
-  }
-
-  .hero-wrapper {
-    align-items: center;
-    text-align: center;
   }
 
   .features__list,
   .team__list {
     display: flex;
     flex-direction: column;
-  }
-
-  .team__list {
-    align-items: center;
-    text-align: center;
   }
 }
